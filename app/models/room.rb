@@ -1,5 +1,6 @@
-class Room < ApplicationRecord
+class Event < ApplicationRecord
   belongs_to :user
+  has_many :photos
 
   validates :address, presence: true
   validates :home_type, presence: true
